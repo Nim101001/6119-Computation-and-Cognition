@@ -76,7 +76,7 @@ def iteration(examples_matrix, weights_vec: WeightsVector):
     first_mistake_dict = examples_matrix.get_first_mistake(weights_vec)
     weights_vec.update_weights(first_mistake_dict)
 
-
+#
 x = ExamplesMatrix(15,2)
 print(x.val)
 x.plot_classification(np.array([1 for i in range(15)]))
